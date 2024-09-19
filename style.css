@@ -1,5 +1,34 @@
+body{
+    background-color: #bed1c3;
+}
+
+h1{
+    margin: 0 0 1% 0;
+}
+
+.navbar {
+    background-color: #fff;
+    height:30px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+
+.navlist {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
 .navitem {
     display: inline-block;
     margin: 5px;
-  }
-  
+}
+
+.nailImage{
+    height: 30%;
+    width: 15%;
+    padding-top: 3%;
+}
+
+h2{
+    margin-bottom: 7px;
+}
