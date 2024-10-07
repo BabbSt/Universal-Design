@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!--Holdover from prexisting language. Let's browser know what rules following-->
+    <!--Without it, browser goes into special mode to handle old code that existed before this-->
+<html lang="en"> <!--Language tag new, states what language content will be in-->
+    <head><!--Instructions for browser-->
+        <meta charset="utf-8"> <!--Using univeral text format 8, western chars + some symbols-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Don't scale content, we'll handle scaling elsewhere-->
+        <title>HTML5 Semantic Code Example</title>
+        <link rel="stylesheet" href="css/semantic-design.css">
+    </head>
+    <body><!--What shows up on webpage-->
+        <div class="container">
+        <header>
+            <h1>Proper Use of HTML5 Semantic Markup</h1>
+        </header>
+
+        <nav>
+            <h2 class="sr-only">main navigation</h2> <!--Adding header prevents nav from being untitled in outline-->
+            <ul>
+                <li><a href="#latin-dummy">Lorem Ipsum</a></li>
+                <li><a href="#hipster-ipsum">Hipster Ipsum</a></li>
+                <li><a href="#">Dummpy Link</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="latin-dummy">
+                <h2>Latin "dummy" text</h2>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla dolor eget tincidunt efficitur. Fusce blandit magna ante, a tincidunt libero porttitor eu. Vestibulum sem dolor, rhoncus nec sem quis, imperdiet iaculis magna. Integer diam massa, viverra eu suscipit vel, faucibus id dui. Quisque facilisis porta sem, id scelerisque leo mattis ac. Etiam at egestas lorem, aliquet pulvinar nibh. Donec viverra vestibulum massa non tempor. Maecenas a suscipit tortor. Cras pretium finibus lorem, at imperdiet mauris consequat ac. Suspendisse molestie dui ante, vitae varius erat molestie imperdiet. Nunc volutpat ac purus non efficitur. Ut sed varius massa, ut dictum augue.</p>
+
+                <p>In sit amet diam congue, pretium dui ut, semper leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus rutrum, nunc vel ultrices vestibulum, justo risus scelerisque eros, vitae malesuada enim augue at ipsum. Sed in lorem non sem molestie dictum. Nam elementum ornare felis id ullamcorper. Mauris accumsan mi id augue semper posuere. Pellentesque libero purus, suscipit feugiat massa nec, dapibus egestas leo. Suspendisse eget laoreet diam. Aenean auctor consequat commodo. Praesent neque quam, dictum in nisl vitae, maximus varius odio. Fusce ligula nisl, gravida vel molestie eget, sagittis quis dui.</p>
+
+                <p>Sed mattis felis velit, eu pellentesque ante accumsan in. Nullam cursus auctor nibh, at aliquet quam. Cras suscipit efficitur velit quis facilisis. Pellentesque finibus non diam nec blandit. Quisque odio ante, congue eget ornare et, eleifend accumsan nunc. Sed vitae rutrum justo. Ut sit amet neque mauris. Fusce eleifend ex et quam rhoncus consequat. Fusce sit amet eros velit. Suspendisse consectetur nunc nec massa consequat auctor. Phasellus nec augue sed turpis dictum gravida. In tristique est tincidunt libero porta, quis euismod nisl varius. Maecenas posuere purus sit amet neque venenatis pharetra.</p>
+
+                <p>Mauris massa nunc, lacinia ut scelerisque nec, feugiat at lorem. Sed lobortis dignissim tortor quis bibendum. Sed efficitur, lorem sed suscipit venenatis, magna magna venenatis quam, quis fringilla ligula turpis ac eros. Curabitur accumsan velit ac ligula condimentum fringilla. Nullam euismod libero odio. Donec ornare in dolor egestas maximus. Praesent varius mi arcu, id consequat libero pulvinar vel. Cras arcu nulla, feugiat eu ornare vel, tincidunt a urna. Curabitur eu dapibus metus, vitae rhoncus lectus.</p>
+
+                <p>Donec nulla neque, vulputate non ipsum et, venenatis rhoncus quam. Vivamus fermentum nec magna nec tincidunt. Duis nec nisl aliquet, feugiat dolor in, mattis dolor. Vivamus commodo velit vel porta mattis. Pellentesque ac mauris porta, auctor velit sit amet, vehicula mi. Donec mollis mi in dui molestie, a malesuada est cursus. Integer pellentesque, quam vel vehicula hendrerit, ligula ligula dapibus nunc, eu vehicula massa tellus ut felis. Curabitur sit amet sapien at nulla lobortis lacinia imperdiet quis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris varius elit vitae fermentum dictum.</p>
+                <figure><!--Correct way to include informational images-->
+                    <img src="http://placehold.it/300x300" alt="verbal description of image">
+                    <figcaption>image title</figcaption><!--image caption-->
+                </figure>
+                <aside><!--supplementary info-->
+                    <h2>supplementary links</h2>
+                    <ul>
+                        <li><a href="#">how to learn latin</a></li>
+                    </ul>
+                </aside>
+            </section>
+            <section id = "hipster-ipsum"> <!--Use ids for anchors (internal links) since only want to use them on one element-->
+                <h2>Hipster Ipsum</h2>
+                <p>I'm baby blog try-hard you probably haven't heard of them, poke activated charcoal fixie snackwave bodega boys portland adaptogen offal chicharrones keffiyeh same YOLO. Meggings pop-up stumptown la croix YOLO. Aesthetic banh mi neutra tote bag seitan asymmetrical Brooklyn. Kickstarter synth direct trade skateboard trust fund.</p>
+
+                <p>Austin +1 fit blog four loko DIY wolf bitters slow-carb church-key microdosing. Taxidermy yes plz fashion axe pitchfork four dollar toast. Vaporware distillery air plant, glossier marfa pickled green juice intelligentsia organic. Scenester big mood pickled fanny pack 90's. Solarpunk asymmetrical before they sold out, man bun coloring book flannel occupy ugh pug authentic.</p>
+
+                <p>Listicle polaroid subway tile truffaut PBR&B, vice flexitarian vinyl wayfarers distillery flannel +1 banjo. Bruh green juice chambray mustache disrupt you probably haven't heard of them pabst jean shorts chillwave bicycle rights 8-bit edison bulb hell of raw denim. Crucifix offal vexillologist wolf microdosing farm-to-table bespoke green juice whatever DIY lumbersexual. Hell of vaporware tumeric marxism banjo. Copper mug food truck listicle blackbird spyplane skateboard bruh. Hoodie marxism DIY farm-to-table. Asymmetrical polaroid vinyl, jawn paleo raw denim locavore street art pour-over trust fund tumblr stumptown messenger bag blackbird spyplane.</p>
+
+                <p>Tacos banjo artisan glossier, vice cred adaptogen squid disrupt. Tilde bruh blog skateboard street art food truck snackwave. Mumblecore small batch typewriter, aesthetic pour-over listicle truffaut kickstarter tumblr helvetica. DIY Brooklyn brunch narwhal chartreuse fixie affogato. VHS sustainable offal, tonx gluten-free tofu yes plz pour-over woke. Pinterest art party roof party live-edge slow-carb post-ironic same actually deep v disrupt tattooed blackbird spyplane palo santo. Pok pok pug church-key gochujang deep v affogato hell of marfa shaman solarpunk craft beer.</p>
+
+                <p>Fingerstache pok pok coloring book iPhone, pitchfork cornhole Brooklyn disrupt yr yes plz taxidermy neutral milk hotel dreamcatcher. Pinterest actually waistcoat, messenger bag before they sold out vice jawn raclette mlkshk. Hashtag pug iceland, narwhal green juice organic live-edge skateboard squid salvia mixtape raw denim 90's selvage. Quinoa master cleanse messenger bag yes plz, affogato cornhole semiotics offal hammock twee microdosing try-hard pork belly jianbing.</p>
+
+                <p>Yuccie marxism literally ennui. Neutra small batch subway tile DSA disrupt skateboard shaman single-origin coffee vape pabst. Bitters quinoa microdosing, man braid fixie jean shorts normcore live-edge neutra bruh 90's leggings. Dreamcatcher direct trade ascot locavore chartreuse four loko PBR&B sustainable blackbird spyplane mumblecore flexitarian post-ironic squid snackwave scenester. Cloud bread cliche synth lyft irony meditation quinoa raclette chartreuse chia franzen. You probably haven't heard of them kickstarter pug occupy chartreuse, cold-pressed shaman ennui shabby chic trust fund tattooed deep v crucifix copper mug.</p>
+
+                <p>Kinfolk fam locavore pickled yr. Cupping green juice plaid marfa tumeric mustache cold-pressed yr pitchfork. Synth tbh woke deep v bicycle rights bruh vexillologist vaporware forage kinfolk pinterest asymmetrical. Typewriter jianbing ramps mustache flexitarian drinking vinegar. Listicle coloring book taiyaki jawn PBR&B blackbird spyplane synth. Fit direct trade bruh prism gastropub chicharrones occupy sriracha raw denim lomo.</p>
+
+                <p>Cupping adaptogen bushwick, thundercats salvia lyft readymade. IPhone enamel pin crucifix typewriter lyft gluten-free franzen. Fingerstache trust fund wayfarers gatekeep thundercats. Tumeric fanny pack deep v selfies, gluten-free palo santo small batch irony four loko neutra humblebrag synth leggings. Sriracha vice ugh, fanny pack street art skateboard 3 wolf moon cliche hella portland. Adaptogen asymmetrical waistcoat master cleanse pinterest stumptown franzen.</p>
+
+                <p>Enamel pin kombucha portland food truck lo-fi, celiac selfies taxidermy photo booth pug woke. Meggings sustainable vegan raw denim tattooed fingerstache, hell of pabst. Kale chips yes plz cronut kinfolk grailed gentrify gluten-free fanny pack cray snackwave disrupt sustainable hexagon. Gentrify polaroid lo-fi big mood hexagon tumblr. Cupping roof party drinking vinegar cardigan. Ugh deep v thundercats, mustache shaman blackbird spyplane YOLO shoreditch quinoa cold-pressed. Narwhal gentrify PBR&B you probably haven't heard of them, salvia fit asymmetrical typewriter neutral milk hotel unicorn seitan big mood migas.</p>
+
+                <p>Viral cold-pressed chartreuse wayfarers waistcoat master cleanse. Organic messenger bag venmo pitchfork mustache sartorial small batch DSA meggings gochujang cupping pop-up. Williamsburg pug beard craft beer. Drinking vinegar actually mlkshk, flannel PBR&B hell of sus ramps aesthetic messenger bag direct trade put a bird on it cold-pressed pok pok. Pitchfork occupy ascot poke. Blackbird spyplane venmo meggings air plant ennui flexitarian.</p>
+            </section>
+        </main>
+
+        <aside> <!--belongs to website as a whole, since outside of main content or section-->
+            <h2>supplemntary social media links</h2>
+            <ul>
+                <li><a href="#">instagram</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>designed by me</p>
+            <address>email@colorado.edu</address><!--for email address-->
+            <small>&copy; 2021</small>
+        </footer>
+        </div><!--end container (write comment at end for what div is for)-->
+    </body>
+</html>

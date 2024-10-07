@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Roboto&display=swap');
+body{
+    background: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.container{ /*Always try to use elements first, use class as last resort*/
+    max-width: 960px; /*sets approx width to 250 char for readability. Keep images smaller than this*/
+    margin: 0 auto; /*top and bottom margin 0, left and right auto. Centers page*/
+}
+
+p{ /*increasing paragraph line spacing improves readability IMPORTANT WILL LOOK FOR IN ASSIGNMENTS*/
+    line-height: 1.4em;
+    margin-bottom: 1.4em;
+}
+
+h1,
+h2,
+h3{/*Descending, applies to all h1,h2, & h3*/
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.8em;
+    padding: 5px; /*if change style change it at a level so affects all links*/
+}
+
+nav ul li a:link{
+    color: black;
+}
+
+nav ul li a:visited{
+    color: black
+}
+
+nav ul li a:hover{
+    color: white;
+    background: black;
+}
+
+nav ul li a:active{ /*lvha - link visited hover active for setting up links*/
+    color: yellow;
+}
+
+.sr-only { /*Class that hides content from viewable page, but makes it available to screen reader*/
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
