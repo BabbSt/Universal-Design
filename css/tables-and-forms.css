@@ -10,7 +10,7 @@
 }
 
 .skip-link:focus{
-    transform: translateY(-100%);
+    transform: translateY(-80%);
 }
 
 body{
