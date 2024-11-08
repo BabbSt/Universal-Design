@@ -1,37 +1,88 @@
+*,
+*:before,
+*:after{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.skip-link{
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus{
+    transform: translateY(0);
+}
+
 body{
     background-color: #bed1c3;
 }
 
-h1{
-    margin: 0 0 1% 0;
+header,
+main{
+    padding: 1.5em;
 }
 
-.navbar {
-    background-color: #fff;
-    height:30px;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
+header{
+    text-align: center;
 }
 
-.navlist {
-    margin: 0 0 0 0;
-    padding: 0;
+nav ul{
+    flex-flow: column nowrap;
+    text-align: center;
 }
 
-.navitem {
-    display: inline-block;
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px 5px;
     margin: 5px;
+    border: 1.5px black solid;
+    background: white;
+    text-decoration: none;
 }
 
-.nailImage{
-    height: 30%;
-    width: 15%;
-    padding-top: 3%;
+nav ul li a:link,
+nav ul li a:visited{
+    color: black;
+    font-size: large;
 }
-
 h2{
-    margin-bottom: 7px;
+    margin-bottom: 0.3em;
 }
+
+p{
+    line-height: 1.5em;
+    margin-bottom: 1.3em;
+}
+
+img{
+    max-width: 100%;
+    padding-bottom: 1.2em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 
+    1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main";
+}
+
+header{grid-area: header;}
+nav{grid-area: nav;}
+main{grid-area: main;max-width: 960px; margin: 0 auto;}
 
 .sr-only { /*Class that hides content from viewable page, but makes it available to screen reader*/
     border: 0;
@@ -44,3 +95,24 @@ h2{
     white-space: nowrap;
     width: 1px;
   }
+
+@media screen 
+and (min-width:620px){
+    header{
+        text-align: left;
+    }
+    nav{
+        background: white;
+        border-style: solid none;
+        border-width: 1.5px;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+    nav ul li a{
+        border: none;
+        text-decoration: underline;
+    }
+}

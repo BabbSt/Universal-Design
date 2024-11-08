@@ -2,35 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Stephanie's Universal Design Site</title>
+    <title>Stephanie's Site</title>
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/style.css" media="screen">
 </head>
 <body>
-<header>
-    <h1>Stephanie's Universal Design Site</h1>
-    <nav class="navbar">
-        <h2 class="sr-only">Main Navigation</h2>
-        <ul class="navlist">
-            <li class="navitem"><a href="#">Home</a></li>
-            <li class="navitem"><a href="wiki.html">Wiki Page</a></li>
-            <li class="navitem"><a href="tables-and-forms.html">Tables and Forms</a></li>
-            <li class="navitem"><a href="layout.html">Responsive CSS</a></li>
-        </ul>
-    </nav>
-</header>
+    <a class="skip-link" href="#maincontent">Skip Navigation</a>
+    <div class="container">
+        <header>
+            <h1>Stephanie's Universal Design Site</h1>
+        </header>
 
-<main>
-    <img class = "nailImage" src="img/ATLAS_nails.jpg" alt="Hand holding an ATLAS sticker of all the ATLAS A designs, with 4 of the designs recreated on the fingernails">
-    <section>
-        <h2>About Me</h2>
-        <p>My name is Stephanie Babb, and I am a first year student in the ATLAS Creative Technology and Design master's program.
-        I completed my undergraduate degree in computer science with focuses in computer systems and human-computer interaction.
-        I grew up in Washington, completed my undergrad in Oregon, and spent the past 3 years working in Idaho.
-        I like to say I have collected all of the pacific northwest states. I have a passion for sustainability and
-        accessibility and hope to incorporate principles of both into my future work. In my free time I enjoy watching 
-        football, baseball, and women's gymnastics; doing nail art; and getting outside on a good walk when I can.</p>
-    </section>
-</main>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul class="navlist">
+                <li class="navitem"><a href="#">Home</a></li>
+                <li class="navitem"><a href="wiki.html">Wiki Page</a></li>
+                <li class="navitem"><a href="tables-and-forms.html">Tables and Forms</a></li>
+                <li class="navitem"><a href="layout.html">Responsive CSS</a></li>
+            </ul>
+        </nav>
 
+        <main id="maincontent">
+            <figure>
+                <img src="img/ATLAS_nails.jpg" alt="Hand holding an ATLAS sticker of all the ATLAS A designs, with 4 of the designs recreated on the fingernails">
+            </figure>
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Stephanie Babb, and I am a first year student in the ATLAS Creative Technology and Design master's program.
+                I completed my undergraduate degree in computer science with focuses in computer systems and human-computer interaction.
+                I grew up in Washington, completed my undergrad in Oregon, and spent the past 3 years working in Idaho.
+                I like to say I have collected all of the pacific northwest states. I have a passion for sustainability and
+                accessibility and hope to incorporate principles of both into my future work. In my free time I enjoy watching 
+                football, baseball, and women's gymnastics; doing nail art; and getting outside on a good walk when I can.</p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
