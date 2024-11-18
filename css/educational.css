@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Noto+Sans&family=PT+Serif:wght@700&display=swap');
+
+*,
+*:before,
+*:after{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.skip-link{
+    background: white;
+    color: black;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus{
+    transform: translateY(0);
+}
+
+header,
+main{
+    padding: 1.5em;
+}
+
+h1,
+h2,
+h3{
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
+
+header,nav, footer{
+    background-color: #22009C;
+    color: white;
+    text-align: center;
+}
+
+nav ul{
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1.5px black solid;
+    background: white;
+    text-decoration: none;
+    color: #0046A8;
+    font-size: large;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+}
+
+h2{
+    margin-block-end: 0.5em;
+}
+
+p{
+    line-height: 1.45em;
+    margin-bottom: 1em;
+}
+
+footer p{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 
+    1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{grid-area: header;}
+nav{grid-area: nav;}
+main{grid-area: main; max-width: 960px; max-height: 100%;}
+footer{grid-area: footer;}
+
+.sr-only { /*Class that hides content from viewable page, but makes it available to screen reader*/
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  @media screen 
+  and (min-width:620px){
+    header{
+        padding: 2em;
+    }
+    nav{
+        background-color: #0046A8;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        
+    }
+    nav ul li a{
+        border: none;
+        text-decoration: underline;
+        background-color: #0046A8;
+        color: white;
+    }
+    footer{
+        padding: 1em;
+    }
+  }
