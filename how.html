@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Design</title>
+    <link rel="stylesheet" href="css/educational.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#maincontent">Skip Navigation</a>
+    <div class="container-how">
+        <header>
+            <h1>Universal Design</h1>
+        </header>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href="educational.html">What</a></li>
+                <li><a href="why.html">Why</a></li>
+                <li><a href="#">How</a></li>
+            </ul>
+        </nav>
+        <main id="maincontent">
+            <h2>How can you impliment universal design?</h2>
+            <section id="how">
+                <h3>WCAG</h3>
+                <p>The World Wide Web Consortium, or W3C, is a group that set out to standardize the web. Since the 1990s they have been publishing standards for web development to ensure websites function on all browsers and devices. The W3C’s Web Accessibility Initiative (WIA) created a set of Web Content Accessibility Guidelines, also known as WCAG, which provides success criteria a website must meet to be accessible. The success criteria are organized under WCAG's four main principles:</p>
+                <ul>
+                    <li>Perceivable (1.x.x) - Content must be presented in a way users can see or hear</li>
+                    <li>Operable (2.x.x) - Content and UI elements must be possible for users to interact with including through assistive technology and keyboard only navigation</li>
+                    <li>Understandable (3.x.x) - Information and functionality must be clearly communicated and displayed in readable manner</li>
+                    <li>Robust (4.x.x) - Content must be possible for various user agents and accessible technologies to reliably interpret</li>
+                </ul>
+                <p>Each criterion also falls into one of three levels of compliance: A, AA, and AAA representing minimum, must have, and good to have respectively. For a list of all success criteria, including documentation on understanding and implementing them, visit the <a href="https://www.w3.org/TR/WCAG22/">WCAG official guidelines</a>.</p>
+            </section>
+            <section>
+                <h3>Coding practices</h3>
+                <p>The best way to ensure a usable site is by implementing accessible coding practices.</p>
+                <section>
+                    <h4>Semantic structure</h4>
+                    <p>Accessible code begins with making sure every item on the site serving any informational or interactive purpose (a.k.a. any purpose other than design) is defined semantically. This is necessary for browsers, search engines, and assistive technology to properly interpret your website.</p>
+                    <p>To properly implement semantic structure:</p>
+                    <ul>
+                        <li>Regions (header, footer, nav, main, etc.) should be properly defined</li>
+                        <li>Headings should be used in ascending order to properly represent their hierarchical meaning</li>
+                        <li>Use the correct list type for the information you are trying to convey</li>
+                        <li>Use <code>&lt;section&gt;</code> to group related content and <code>&lt;fieldset&gt;</code> to define a group of form elements (a.k.a widgets) with a shared purpose</li>
+                        <li>Use labels to properly define input fields</li>
+                        <li>Use headers in tables to define row and columns</li>
+                        <li>Utilize ARIA (Accessible Rich Internet Applications) to provide semantics or define interactions with assistive technology that HTML cannot define. Remember the first rule of ARIA is to use HTML instead unless it's impossible to provide accessibility without it</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Separation of content and design</h4>
+                    <p>Separating the design of a page from its content allows users to configure your site to meet their needs without impacting the information. To do this, all styling should be done only in CSS while the HTML holds only the content. A great example of this is <a href="https://csszengarden.com/">CSS Zen Garden</a> which displays the same HTML content many different ways by using different styling files. Separating your styling for your content will also benefit your future maintenance as the website can be entirely redesigned without affecting the content and vice versa.</p>
+                </section>
+                <section>
+                    <h4>Responsive design</h4>
+                    <figure>
+                        <img src="img/responsive_grids-scaled.jpeg" alt="a monitor, laptop, tablet, and two phones with the same content mocked up on their screens">
+                        <figcaption>Responsive design should look good and function well on any device</figcaption>
+                    </figure>
+                    <p>Responsive Design is web design that changes in response to a device's screen size. Responsive design can be implemented by using a grid-based CSS layout, flexible media, and CSS media queries to define behavior for certain screen sizes. It is recommended to build mobile first and practice progressive enhancement, using the main style sheet to define mobile design and media queries to define behavior for larger screen sizes, but desktop-first graceful degradation will also suffice.</p>
+                </section>
+            </section>
+            <section>
+                <h3>Readability and legibility</h3>
+                <p>Another important factor of your site to consider is that it must be readable and legible. To make sure your site is readable for all users, you must pick good color contrast. Refer to WCAG guideline 1.4.3 to see the specifications for AA and AAA contrast requirements.</p>
+                <p>For a comfortable reading experience, and to avoid exacerbating issues for readers with low-vision, text must be properly spaced out. Make sure to set a line height value appropriate for your chosen font and add proper spacing between each paragraph by setting a margin value. The font itself should be a clean, serif font for the body text. Finally, be aware of your line length; it should be no more than around 100 characters or about 960 pixels. Lines that take up the whole screen create a higher physical effort on the return sweep (the returning one's eyes to the beginning of the next line) and cause fatigue.</p>
+            </section>
+            <section>
+                <h3>Testing tools</h3>
+                <p>There are various tools you can use to test the accessibility of your site:</p>
+                <ul>
+                    <li>Wave & Silktide - Browser extensions that provide various tools for accessibility checks. Both WAVE and Silktide evaluate a site for accessibility errors, and Silktide provides tools such as an in-browser screen reader, simulations of vision impairments and dyslexia, and a focus order overlay.</li>
+                    <li>Adobe Color - An online tool for finding colors with the required contrast for WCAG AA and AA standards and checking that they are color blind safe.</li>
+                    <li>validator.nu - Based on the W3C's online validator, validator.nu can take a live address or a local code file and assess the HTML for proper semantic and accessibility practices.</li>
+                    <li>Outline extension - A browser extension that will provide the sematic outline of a live site.</li>
+                    <li>NVDA & JAWS - Popular screen readers you can install to experience how users relying on screen readers will navigate your site.</li>
+                    <li>Chrome's Dev Tools - For both live and local websites, Google Chrome's built-in developer tools provide various options, including a grid overlay, helpful for implementing responsive design, and the Lighthouse tool which can generate a report on the site's accessibility and whether it adheres to coding best practices.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Testing without tools</h3>
+                <p>Some WCAG success criteria can be tested without the use of any tools at all. If you don't have testing resources available to you, this is a great place to start.</p>
+                <h4>Keyboard success criteria</h4>
+                    <ul>
+                    <li>2.1.1 Keyboard - all functionality is operable via the keyboard</li>
+                    <li>2.1.1 No Keyboard Trap - focus does not get stuck on an element</li>
+                    <li>2.4.1 Bypass Blocks (skip link) - a method is provided to skip content repeated across multiple pages, like a nav bar</li>
+                    <li>2.4.3 Focus Order - focus order should follow logical reading order</li>
+                    <li>2.4.7 Focus Visible - must have a visible indicator for focus</li>
+                    </ul>
+                <h4>Media and moving content success criteria</h4>
+                <ul>
+                    <li>1.2.1 Audio-only and Video-only (Prerecorded) - a text version with equivalent information should be provided</li>
+                    <li>1.2.2 Captions (prerecorded) - captions must be provided for all prerecorded audio and include description of any sounds important for context</li>
+                    <li>1.2.4 Captions (Live) - captions are available for all live audio content</li>
+                    <li>1.2.5 Audio Description or Media Alternative (Live) - prerecorded video should have an audio description available</li>
+                    <li>1.4.2 Audio Control - a mechanism must be available to pause, stop, or separately control the volume of any automatically playing audio</li>
+                    <li>2.2.2 Pause, Stop, Hide - a user must be able to pause or hide any scrolling, blinking, or moving content and also must be able to pause, stop, hide, or change the frequency of auto-updating content</li>
+                </ul>
+                <h4>Success criteria for conveying meaning</h4>
+                <ul>
+                    <li>1.3.3 Sensory Characteristics - communication of interaction processes cannot rely solely on visual or auditory cues such as shape, color, size, sound, or visual location on the screen.</li>
+                    <li>1.4.1 Use of Color - information should never be conveyed through color alone</li>
+                </ul>
+            </section>
+        </main>
+        <aside>
+            <h3>References</h3>
+            <p>Want to learn more? Here's a list of links to get started:</p>
+            <ul>
+                <li><a href="https://www.w3.org/TR/WCAG22/">WCAG official guidelines</a></li>
+                <li><a href="https://webaim.org/techniques/semanticstructure/ ">WebAIM semantic stucture guide</a></li>
+                <li><a href="https://www.w3.org/wiki/Colour_schemes_and_design_mockups ">W3C article on designing with readability and legability in mind</a></li>
+                <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/ ">W3C article with quick checks for a first accessibility review</a></li>
+                <li><a href="https://webaim.org/resources/evalquickref/ ">WebAIM quick guide for accessibility testing</a></li>
+                <li><a href="https://www.lullabot.com/articles/what-heck-aria-beginners-guide-aria-accessibility">A beginner's guide to ARIA</a></li>
+                <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A guide to CSS grid layouts</a></li>
+                <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A guide to CSS flexbox</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics">Mozilla's documentation for HTML tabels</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form">Mozilla's introduction to HTML forms</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Designed by Stephanie Babb</p>
+            <small>&copy; 2024</small>
+        </footer>
+    </div>
+</body>
+</html>
