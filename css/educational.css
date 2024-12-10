@@ -108,6 +108,9 @@ img,iframe{
 footer p{
     margin: 0;
 }
+footer{
+    padding: 1em;
+}
 
 .container{
     display: grid;
@@ -173,9 +176,7 @@ and (min-width: 641px){
     nav ul li a:hover{
         color: white;
     }
-    footer{
-        padding: 1em;
-    }
+    
     
     .container-how main,
     .container-how aside{
